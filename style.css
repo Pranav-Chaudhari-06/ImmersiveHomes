@@ -1,0 +1,5 @@
+.bg-custom{
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
