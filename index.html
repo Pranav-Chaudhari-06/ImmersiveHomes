@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,40 @@
     <script src="Bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Immersive Homes</title>
+    <style>
+        model-viewer{
+        height: 600px;
+        width: 300px;
+        /* margin: 0 auto; */
+    }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg bg-custom">
-            <a class="navbar-brand text-light ms-2">Immersive Homes</a>
-            <button class="navbar-toggler me-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-bold text-light" href="">Explore</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="">Upload a plan</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item me-4">
-                        <a class="nav-link text-light" href="">Login</a>
-                    </li>
-                </ul>
-            </div>
+                <a class="navbar-brand text-light ms-2">Immersive Homes</a>
+                <button class="navbar-toggler me-4" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-bold text-light" href="">Explore</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="">Upload a plan</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-light" href="">Login</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -38,16 +49,17 @@
         <section>
             <div class="container-fluid mt-5">
                 <div class="row">
-                    <div class="col">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum tellus magna, id accumsan massa pretium quis. Nulla facilisi. Duis tempor vestibulum rhoncus. 
-                        Praesent eu lobortis lacus. Phasellus ut urna auctor, consectetur metus eu, commodo nulla. Integer vestibulum enim vel ligula egestas, sed lacinia velit accumsan. Nulla facilisi. Nam ut efficitur metus. Praesent et feugiat mauris, et fringilla sem. Morbi eu erat in arcu egestas eleifend in et felis. 
-                        Nam suscipit tellus et mi consequat sodales. Fusce luctus libero ligula, eget bibendum quam tincidunt fringilla. Quisque quis ultrices elit. Morbi iaculis pretium rutrum. Aliquam non tortor ut quam aliquam laoreet in non justo. Aliquam volutpat rutrum fermentum. Nam vel justo quis ligula convallis varius. 
-                        Vestibulum tempor placerat ante a tempus. Quisque dapibus finibus fermentum. Nam vitae fermentum ante, nec scelerisque urna. Duis volutpat sit amet dui feugiat lobortis. Fusce massa enim, semper vitae metus nec, pellentesque tincidunt lorem. Integer fermentum scelerisque lorem viverra egestas. Donec placerat diam ut odio venenatis efficitur. 
-                        Aenean semper tempus libero sit amet pulvinar. Suspendisse potenti. Ut elementum elementum odio in sagittis. Fusce quis pharetra arcu, nec condimentum leo. Sed vel velit hendrerit, tempus velit eu, egestas erat. Proin ac nulla sit amet urna molestie interdum. Nullam dapibus augue odio, at tincidunt diam vulputate quis. Nulla mattis, lorem et semper dapibus, libero lorem porta neque, eget varius erat tellus eu arcu. 
-                        Sed sit amet tellus a est finibus sodales in mattis libero. Mauris fringilla, augue eget sollicitudin volutpat, magna leo porttitor nisi, ac porttitor ante velit vitae ligula. Integer mollis sem non massa consectetur dictum. Aliquam venenatis dui vel pellentesque suscipit. Suspendisse eleifend mattis tellus in sodales. Nam luctus placerat est, nec pretium dui vestibulum ut. Praesent at lorem ante. Morbi tempus metus ut mauris sagittis vulputate.
+                    <div class="col border border-dark">
+                        <h1 class="m-5">Some Content will be kept here.</h1>
                     </div>
-                    <div class="col">
-                        
+                    <div class="col border border-dark">
+                        <!-- Import the component -->
+                        <script type="module"
+                            src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+                        <!-- Use it like any other HTML element -->
+                        <model-viewer src="chairmans_chair__20mb.glb" shadow-intensity="1" camera-controls
+                            touch-action="pan-y"></model-viewer>
                     </div>
                 </div>
             </div>
@@ -56,6 +68,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>

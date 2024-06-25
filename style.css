@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
 .bg-custom{
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #17b2ff, #710cff);
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -9,4 +9,12 @@
     font-optical-sizing: auto;
   /* font-weight: ; */
   font-style: normal;
+}
+body {
+  background: linear-gradient(to right, #17b2ff, #710cff); /* Warm Sunset Gradient */
+}
+model-viewer{
+  height: 600px;
+  width: 300px;
+  margin: 0 auto;
 }
