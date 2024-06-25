@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
 .bg-custom{
     background: linear-gradient(to right, #0072ff, #00c6ff);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.navbar-brand{
+    font-family: 'Playwrite MX', cursive;
+    font-optical-sizing: auto;
+  /* font-weight: ; */
+  font-style: normal;
 }
